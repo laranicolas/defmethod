@@ -27,7 +27,7 @@ module Parser
 
       def uniform_date!(date)
         date_object = Date.strptime(date.gsub(/\D/, '-'), '%m-%d-%Y')
-        date.replace(date_object.strftime('%m/%d/%Y'))
+        date.replace(date_object.strftime('%-m/%-d/%Y'))
       rescue
         raise InvalidDateValueError.new("invalid date: #{date}")
       end

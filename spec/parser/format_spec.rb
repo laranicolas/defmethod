@@ -21,7 +21,7 @@ RSpec.describe Parser::Format do
         expect(result).to be_a_kind_of(Array)
         expect(result.size).to be > 0
         expect(result.first[:gender]).to eq('Female')
-        expect(result.first[:date_of_birth]).to eq('06/03/1975')
+        expect(result.first[:date_of_birth]).to eq('6/3/1975')
       end
     end
 
