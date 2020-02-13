@@ -15,3 +15,9 @@
 ### 4. Run challenge
 
 `ruby run.rb`
+
+## Challenge instructins recommendations
+
+1- In this page https://www.defmethod.com/code-test-2, the order of properties for space delimiter does not match with space input file (https://s3.amazonaws.com/def-method/code-test/space.txt).
+
+2- In this page https://www.defmethod.com/code-test-2, the quantity of headers for comma delimiter does not match with comma input file (https://s3.amazonaws.com/def-method/code-test/comma.txt), `MiddleInitial` properties is not in the input file.
