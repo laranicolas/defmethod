@@ -1,6 +1,6 @@
 require 'date'
 
-module Parser
+module Challenge
   module Format
     extend self
 

@@ -1,7 +1,7 @@
 require 'rspec'
-require_relative '../../lib/parser/Display.rb'
+require_relative '../../lib/challenge/Display.rb'
 
-RSpec.describe Parser::Display do
+RSpec.describe Challenge::Display do
 
   context "#call" do
     let(:content) {[

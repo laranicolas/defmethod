@@ -1,7 +1,7 @@
 require 'rspec'
-require_relative '../../lib/parser/format.rb'
+require_relative '../../lib/challenge/format.rb'
 
-RSpec.describe Parser::Format do
+RSpec.describe Challenge::Format do
 
   context "#call" do
     
@@ -37,7 +37,7 @@ RSpec.describe Parser::Format do
         }
       ]}
       it "raise an expection" do
-        expect { described_class.call(lines) }.to raise_error(Parser::Format::InvalidGenderValueError)
+        expect { described_class.call(lines) }.to raise_error(Challenge::Format::InvalidGenderValueError)
       end
     end
 
@@ -53,7 +53,7 @@ RSpec.describe Parser::Format do
         }
       ]}
       it "raise an expection" do
-        expect { described_class.call(lines) }.to raise_error(Parser::Format::InvalidDateValueError)
+        expect { described_class.call(lines) }.to raise_error(Challenge::Format::InvalidDateValueError)
       end
     end
 

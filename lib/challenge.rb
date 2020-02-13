@@ -1,7 +1,7 @@
-require_relative 'parser/reader'
-require_relative 'parser/display'
+require_relative 'challenge/reader'
+require_relative 'challenge/display'
 
-module Parser
+module Challenge
   extend self
 
   INPUT_ATTRIBUTES = [
@@ -16,10 +16,10 @@ module Parser
 
   private
     def content
-      Parser::Reader.call(INPUT_ATTRIBUTES)
+      Challenge::Reader.call(INPUT_ATTRIBUTES)
     end
 
     def display(output)
-      Parser::Display.call(output)
+      Challenge::Display.call(output)
     end
 end

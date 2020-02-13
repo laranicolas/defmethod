@@ -1,7 +1,7 @@
 require 'rspec'
-require_relative '../../lib/parser/sort.rb'
+require_relative '../../lib/challenge/sort.rb'
 
-RSpec.describe Parser::Sort do
+RSpec.describe Challenge::Sort do
   let(:content) {[
     {
       'last_name': 'Kournikova',

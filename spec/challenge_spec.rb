@@ -1,7 +1,7 @@
 require 'rspec'
-require_relative '../lib/parser.rb'
+require_relative '../lib/challenge.rb'
 
-RSpec.describe Parser do
+RSpec.describe Challenge do
 
   let(:output) { <<~OUTPUT
     Output 1:

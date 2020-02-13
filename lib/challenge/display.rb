@@ -1,6 +1,6 @@
 require_relative 'sort'
 
-module Parser
+module Challenge
   module Display
     extend self
 
@@ -13,9 +13,9 @@ module Parser
       def output(content)
         return 'EMPTY CONTENT' if content.empty?
 
-        one_sorted = Parser::Sort.by_gender_asc_then_last_name_asc(content)
-        two_sorted = Parser::Sort.by_dob_asc_then_last_name_asc(content)
-        third_sorted = Parser::Sort.by_last_name_desc(content)
+        one_sorted = Challenge::Sort.by_gender_asc_then_last_name_asc(content)
+        two_sorted = Challenge::Sort.by_dob_asc_then_last_name_asc(content)
+        third_sorted = Challenge::Sort.by_last_name_desc(content)
         <<~OUTPUT
           Output 1:
           #{output_line(one_sorted).join("\n")}

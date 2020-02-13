@@ -1,7 +1,7 @@
 require 'rspec'
-require_relative '../../lib/parser/reader.rb'
+require_relative '../../lib/challenge/reader.rb'
 
-RSpec.describe Parser::Reader do
+RSpec.describe Challenge::Reader do
 
   context "#call" do
     describe "good input attributes" do
@@ -21,7 +21,7 @@ RSpec.describe Parser::Reader do
       }
 
       it "raise input attributes exception" do
-        exception = Parser::Reader::InputAttributesError
+        exception = Challenge::Reader::InputAttributesError
         msg = 'Input should contain list with 3 columns (file_name, headers, delimiters)'
         expect { described_class.call(input_attributes) }.to raise_error(exception, msg)
       end
@@ -31,7 +31,7 @@ RSpec.describe Parser::Reader do
       let(:input_attributes) { [[]] }
 
       it "raise input error" do
-        exception = Parser::Reader::InputAttributesError
+        exception = Challenge::Reader::InputAttributesError
         msg = 'Input should contain list with 3 columns (file_name, headers, delimiters)'
         expect { described_class.call(input_attributes) }.to raise_error(exception, msg)
       end
@@ -43,7 +43,7 @@ RSpec.describe Parser::Reader do
       ] }
 
       it "raise file name exception" do
-        expect { described_class.call(input_attributes) }.to raise_error(Parser::Reader::InputFileNameError)
+        expect { described_class.call(input_attributes) }.to raise_error(Challenge::Reader::InputFileNameError)
       end
     end
   end

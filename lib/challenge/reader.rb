@@ -1,6 +1,6 @@
 require_relative 'format'
 
-module Parser
+module Challenge
   module Reader
     extend self
 
@@ -48,7 +48,7 @@ module Parser
       end
 
       def format(rows)
-        Parser::Format::call(rows)
+        Challenge::Format::call(rows)
       end
 
     class InputAttributesError < StandardError; end
