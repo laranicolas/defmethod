@@ -16,7 +16,7 @@
 
 `ruby run.rb`
 
-## Challenge instructins recommendations
+## Challenge instructions recommendations
 
 1- In this page https://www.defmethod.com/code-test-2, the order of properties for space delimiter does not match with space input file (https://s3.amazonaws.com/def-method/code-test/space.txt).
 
